@@ -1,0 +1,266 @@
+/* Base styles for the body */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ddd;
+    
+}
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; /* This makes the main content take up all available space */
+}
+
+
+/* Header styles */
+header {
+    background-color: rgba(54, 52, 74, 0.5); /* Transparent background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4000ff; /* Change color on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+}
+h2 {
+    color: #ffffff;
+}
+
+/* Grid layout for featured items */
+.featured-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.grid-item {
+    text-decoration: none; /* Ensure no underline for entire grid item */
+}
+
+/* Change color of text within the grid item */
+.grid-item h3, .grid-item p {
+    color: #000000; /* Default text color */
+    margin: 10px 0;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item:hover {
+    transform: scale(1.05); /* Enlarge the item on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Table styles */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    transition: background-color 0.3s;
+    position: relative; /* Make the td relative for clickable area */
+}
+
+.product-table th {
+    background-color: #f2f2f2;
+}
+
+.product-table td a {
+    /*color: #007bff;
+    text-decoration: none;*/
+    display: block; /* Fill the whole cell */
+    width: 100%;
+    height: 100%;
+    color: inherit; /* Inherit the text color from parent */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+}
+
+.product-table td a:hover {
+   /* text-decoration: underline;*/
+    font-weight: bold;
+}
+
+/* Button styles */
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s; /* For changing color on hover */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Contact form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+/* Input and textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Contact Page Submit button style */
+.contact-submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* For changing color on hover */
+}
+
+.contact-submit-button:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+.contact-submit-button:active {
+    background-color: #1e7e34; /* Even darker shade on click */
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(54, 52, 74, 0.5); /* Transparent background */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Social media icon styles */
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color:white
+}
+
+/* Link hover effects */
+.link-hover:hover {
+    color: #0800ff; /* Change color on hover */
+    font-size: 1.1em; /* Enlarge on hover */
+}
+
+/* webpage background image */
+.index-background {
+    background-image: url('images/indexbg.webp');
+}
+
+.shop-background {
+    background-image: url('images/shopbg.jpg');
+}
+
+.contact-background {
+    background-image: url('images/contactbg.jpg');
+}
+.clothing-background {
+    background-image: url('images/clothingbg.jpg');
+}
+.accessories-background {
+    background-image: url('images/accessoriesbg.jpg');
+}
+.footwear-background {
+    background-image: url('images/footwearbg.jpg');
+}
+.underprogress-background {
+    background-image: url('images/underprogressbg.jpg');
+}
+
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff; /* Light grey color for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; /* White for odd rows */
+}
+
+td {
+    color: #333; /* Text color */
+    padding: 8px;
+}
+
+.footer-icons {
+    font-size: 24px; /* Set your desired size */
+    margin: 0 10px; /* Optional: Add some margin */
+}
